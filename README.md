@@ -1,11 +1,14 @@
 # ⚖️ LegalFinder AI (LexiCounsel)
 ### *GenAI-Powered Legal Intelligence, Credibility Validation & Document Simplifier*
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-LegalFinder_AI-blue?logo=github&style=flat-square)](https://github.com/bhavya/legalfinder-ai)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-legalFinder-blue?logo=github&style=flat-square)](https://github.com/bhavya14032007/legalFinder)
+[![Backend Live](https://img.shields.io/badge/Backend-Render%20Live-46e3b7?logo=render&style=flat-square)](https://legalfinder.onrender.com/api/health)
 [![Tech Stack](https://img.shields.io/badge/Stack-MERN%20+%20GenAI-6366f1?style=flat-square)](#technology-stack)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 
-> **Public GitHub Repository Link**: [https://github.com/bhavya/legalfinder-ai](https://github.com/bhavya/legalfinder-ai)
+> **Public GitHub Repository Link**: [https://github.com/bhavya14032007/legalFinder](https://github.com/bhavya14032007/legalFinder)
+>
+> **Live Backend API (Render)**: [https://legalfinder.onrender.com](https://legalfinder.onrender.com) (Health Check: [`/api/health`](https://legalfinder.onrender.com/api/health))
 
 ---
 

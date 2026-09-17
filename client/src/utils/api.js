@@ -2,10 +2,11 @@
  * LegalFinder API Client Connector with Multi-Port Auto-Discovery
  */
 
-let activeBaseUrl = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+let activeBaseUrl = import.meta.env.VITE_API_URL || "https://legalfinder.onrender.com/api";
 
 const candidateUrls = [
   activeBaseUrl,
+  "https://legalfinder.onrender.com/api",
   "http://localhost:5000/api",
   "http://localhost:5001/api",
   "http://127.0.0.1:5000/api",
