@@ -77,8 +77,14 @@ export default function HeroSearch({ onSaveToVault, onAskAdvisor, onNavigateSimp
             </span>
           </div>
 
-          {/* Textarea Input */}
+          {/* Textarea Input with Accessible Label */}
+          <label htmlFor="legal-search-input" className="sr-only">
+            Legal Search Query Input
+          </label>
           <textarea
+            id="legal-search-input"
+            name="legalSearchQuery"
+            aria-label="Describe the legal situation, contract clause, or statute you want to analyze"
             className="prompt-textarea"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
@@ -171,7 +177,7 @@ export default function HeroSearch({ onSaveToVault, onAskAdvisor, onNavigateSimp
 
       {/* Search Results Display */}
       {searchResults && (
-        <div style={{ maxWidth: "860px", margin: "var(--space-4) auto" }}>
+        <div role="region" aria-label="Legal Search Results" aria-live="polite" style={{ maxWidth: "860px", margin: "var(--space-4) auto" }}>
           
           {/* Plain English AI Overview Box */}
           <article className="glass-card" style={{

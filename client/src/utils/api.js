@@ -2,7 +2,7 @@
  * LegalFinder API Client Connector with Multi-Port Auto-Discovery
  */
 
-let activeBaseUrl = import.meta.env.VITE_API_URL || "https://legalfinder.onrender.com/api";
+let activeBaseUrl = (typeof import.meta !== "undefined" && import.meta.env?.VITE_API_URL) || "https://legalfinder.onrender.com/api";
 
 const candidateUrls = [
   activeBaseUrl,

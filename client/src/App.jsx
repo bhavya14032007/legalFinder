@@ -62,17 +62,24 @@ export default function App() {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+      {/* a11y Skip Link for Screen Readers and Keyboard Accessibility */}
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
+
       {/* Semantic Header / Floating Navbar */}
-      <Navbar
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-        theme={theme}
-        toggleTheme={toggleTheme}
-        serverStatus={serverStatus}
-      />
+      <header role="banner">
+        <Navbar
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          theme={theme}
+          toggleTheme={toggleTheme}
+          serverStatus={serverStatus}
+        />
+      </header>
 
       {/* Semantic Main Content Area */}
-      <main className="container" style={{ flex: 1 }}>
+      <main id="main-content" className="container" role="main" tabIndex="-1" style={{ flex: 1 }}>
         {activeTab === "search" && (
           <HeroSearch
             onSaveToVault={handleSaveToVault}
@@ -117,7 +124,9 @@ export default function App() {
       </main>
 
       {/* Semantic Footer */}
-      <Footer setActiveTab={setActiveTab} />
+      <footer role="contentinfo">
+        <Footer setActiveTab={setActiveTab} />
+      </footer>
     </div>
   );
 }
